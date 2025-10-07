@@ -61,7 +61,63 @@ This project enhanced my understanding of:
 
 ---
 
-## 🧠 Project 2: AI Text Summarizer & Question Answering App
+
+## 🧠 Project 2: RAG Document Q&A App with FAISS + Gemini API
+### 📘 Overview
+
+This advanced project integrates Retrieval-Augmented Generation (RAG) using FAISS for vector similarity search and Google Gemini API for powerful language reasoning.
+Users can upload documents and ask complex questions that the AI answers using retrieved context — combining local knowledge + generative intelligence.
+
+### ⚙️ Features
+
+✅ Document upload and text extraction (pdfplumber)
+✅ Chunk splitting and embedding with sentence-transformers
+✅ Semantic retrieval via FAISS index
+✅ Context-aware answers from Gemini API
+✅ Streamlit web app interface
+✅ Automatic safety-filter handling and retry for Gemini
+
+### 🧩 Tech Stack
+Component	Technology
+Language	Python
+Vector Search	FAISS
+Embeddings	Sentence-Transformers (all-MiniLM-L6-v2)
+LLM API	Google Gemini API
+Interface	Streamlit
+Libraries	pdfplumber, faiss, numpy, google-generativeai
+### 🚀 How to Run
+
+1️⃣ Install dependencies
+
+pip install streamlit google-generativeai sentence-transformers faiss-cpu pdfplumber
+
+
+2️⃣ Add your Gemini API key in the code or Streamlit secrets
+3️⃣ Run the app
+
+streamlit run app.py
+
+### 📂 Structure
+📁 RAG_Gemini_FAISS_App/
+│
+├── app.py           # Main Streamlit App
+├── faiss_index.bin   # Saved FAISS Index
+├── text_chunks.pkl   # Chunk Data
+└── requirements.txt
+
+### 💡 Learning Outcomes
+
+Understanding RAG pipelines and document retrieval
+
+Building semantic search with FAISS
+
+Integrating Gemini API for intelligent answer generation
+
+Designing robust Streamlit apps with LLM connectivity
+
+
+---
+## 🧠 Project 3: AI Text Summarizer & Question Answering App
 
 ### 📘 Overview
 The AI Text Summarizer & Question Answering App is an interactive NLP tool built using **Streamlit** and **Hugging Face Transformers** that allows users to:
